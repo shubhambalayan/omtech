@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>OmTech Auto</title>
+    <meta
+      name="description"
+      content="Dicky /Trunk Shockers | For all car & buses as per OEA specification"
+    />
+    <meta
+      name="keywords"
+      content="Dicky shockers, OEA, Omtech auto, Schockers, car shockers, bus shockers, manufacture"
+    />
+    <meta name="author" content="OmTech Auto" />
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="mask-icon" color="#5bbad5" href="safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#766df4">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Page loading styles-->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-family: 'Inter', sans-serif;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #737491;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #766df4;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+    <!-- Page loading scripts-->
+    <script>
+      (function () {
+        window.onload = function () {
+          var preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 2000);
+        };
+      })();
+    </script>
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="assets/vendor/simplebar/dist/simplebar.min.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/tiny-slider/dist/tiny-slider.css"/>
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+    <!-- Google Tag Manager-->
+    <!-- <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-WKV3GT5');
+    </script> -->
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Google Tag Manager (noscript)-->
+    <!-- <noscript>
+      <iframe src="//www.googletagmanager.com/ns.html?id=GTM-WKV3GT5" height="0" width="0" style="display: none; visibility: hidden;"></iframe>
+    </noscript> -->
+    <!-- Page loading spinner-->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+    <main class="page-wrapper">
+      <header class="header navbar navbar-expand-lg navbar-light bg-light navbar-sticky" data-scroll-header="" data-fixed-element="">
+        <div class="container px-0 px-xl-3">
+          <button class="navbar-toggler ms-n2 me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#primaryMenu"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand flex-shrink-0 order-lg-1 mx-auto ms-lg-0 pe-lg-2 me-lg-4" href="index.html"><img class="d-none d-lg-block" src="assets/img/logo/logo-dark.png" alt="Around" width="153"><img class="d-lg-none" src="assets/img/logo/logo-icon.png" alt="Around" width="58"></a>
+          <div class="d-flex align-items-center order-lg-3 ms-lg-auto"><a href="#modal-signin" data-bs-toggle="modal" data-view="#modal-signup-view" class="btn btn-primary d-none d-lg-inline-block">Enquire Now</a></div>
+          <div class="offcanvas offcanvas-collapse order-lg-2" id="primaryMenu">
+            <div class="offcanvas-header navbar-shadow">
+              <h5 class="mt-1 mb-0">Menu</h5>
+              <button class="btn-close lead" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <!-- Menu-->
+              <ul class="navbar-nav">
+                <li class="nav-item "><a class="nav-link" href="index.html">Home</a></li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action link</a></li>
+                      <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Dropdown</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action link</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          <li><a class="dropdown-item" href="#">Yet another link</a></li>
+                        </ul>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+
+                  <li class="nav-item">
+                    <a class="nav-link " href="contact.html">Contact</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Page title-->
+      <section class="jarallax py-7" data-jarallax="" data-speed="0.25">
+        
+        <div class="container py-5 py-sm-7 text-center">
+          <div class="py-md-6">
+            <h1 class="text-white pb-1">About Us</h1>
+            <p class="fs-lg text-white">Omtech Auto in Burari has a wide range of products and services to cater to the varied requirements of their customers. </p>
+          </div>
+        </div>
+      <div style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100;" id="jarallax-container-0"><div class="jarallax-img" style="background-image: url(&quot;assets/img/about.jpg&quot;); object-fit: cover; object-position: 50% 50%; max-width: none; position: fixed; top: 0px; left: 0px; width: 1908px; height: 522.25px; overflow: hidden; pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; margin-top: -22.125px; transform: translate3d(0px, -34.875px, 0px);" data-jarallax-original-styles="background-image: url(assets/img/about.jpg);"></div></div></section>
+      
+      <!-- about-->
+      <section class="container pt-5 pt-lg-6">
+        <!-- RWD Service-->
+        <div class="row align-items-center border-bottom py-5">
+          <div class="col-md-6 py-3"><img class="d-block mx-auto" src="assets/img/about-car.jpg" alt="Responsive Web Design"></div>
+          <div class="col-md-6 px-3 pe-xl-0 ps-lg-5 ps-xl-6 py-2 py-lg-4">
+            <div class="ms-sm-4 py-5 my-sm-0 py-md-6 py-lg-7" style="max-width: 520px;">
+              <h2 class="mb-5">About</h2>
+              <p>
+
+                Established in the year 2011, Omtech Auto in Burari, Delhi is a top player in the category Gas Spring Manufacturers in the Delhi. This well-known establishment acts as a one-stop destination servicing customers both local and from other parts of Delhi. Over the course of its journey, this business has established a firm foothold in it’s industry. The belief that customer satisfaction is as important as their products and services, have helped this establishment garner a vast base of customers, which continues to grow by the day. This business employs individuals that are dedicated towards their respective roles and put in a lot of effort to achieve the common vision and larger goals of the company. In the near future, this business aims to expand its line of products and services and cater to a larger client base. In Delhi, this establishment occupies a prominent location in Burari. It is an effortless task in commuting to this establishment as there are various modes of transport readily available. It is at , Near Govt School, which makes it easy for first-time visitors in locating this establishment. It is known to provide top service in the following categories: Gas Spring Manufacturers, Nitrogen Gas Spring Manufacturers. 
+                
+                <br> <br>
+
+                Omtech Auto in Burari has a wide range of products and services to cater to the varied requirements of their customers. The staff at this establishment are courteous and prompt at providing any assistance. They readily answer any queries or questions that you may have. Pay for the product or service with ease by using any of the available modes of payment, such as Cash, Cheques, Paytm, JD Pay. This establishment is functional from 09:00 - 20:00. 
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer-->
+    <footer class="footer container pt-5 pt-md-6">
+      <div class="row">
+        <div class="col-xl-6 col-lg-5 col-md-4 mb-5 text-center text-md-start">
+          <h2 class="mb-4">Talk to us</h2><a class="btn btn-danger mb-4" href="#"><i class="ai-message-square fs-lg me-2"></i>Chat now</a>
+          <div class="pt-2"><a class="btn-social bs-outline bs-lg bs-facebook me-2 mb-2" href="#"><i class="ai-facebook"></i></a><a class="btn-social bs-outline bs-lg bs-twitter me-2 mb-2" href="#"><i class="ai-twitter"></i></a><a class="btn-social bs-outline bs-lg bs-instagram me-2 mb-2" href="#"><i class="ai-instagram"></i></a><a class="btn-social bs-outline bs-lg bs-google me-2 mb-2" href="#"><i class="ai-google"></i></a></div>
+        </div>
+        <div class="col-xl-6 col-lg-7 col-md-8 mb-5">
+          <div class="row">
+            <div class="col-6 col-sm-4">
+              <div class="widget">
+                <h4 class="widget-title">Company</h4>
+                <ul>
+                  <li><a class="widget-link" href="#">About</a></li>
+                  <li><a class="widget-link" href="#">Jobs</a></li>
+                  <li><a class="widget-link" href="#">Contacts</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4">
+              <div class="widget">
+                <h4 class="widget-title">Services</h4>
+                <ul>
+                  <li><a class="widget-link" href="#">Strategy</a></li>
+                  <li><a class="widget-link" href="#">HR &amp; Talent</a></li>
+                  <li><a class="widget-link" href="#">Training</a></li>
+                  <li><a class="widget-link" href="#">Analytics</a></li>
+                  <li><a class="widget-link" href="#">Sales &amp; Marketing</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="d-none d-sm-block col-sm-4">
+              <div class="widget">
+                <h4 class="widget-title">Our news</h4>
+                <ul>
+                  <li><a class="widget-link" href="#">Latest news</a></li>
+                  <li><a class="widget-link" href="#">Insights</a></li>
+                  <li><a class="widget-link" href="#">Campaigns</a></li>
+                  <li><a class="widget-link" href="#">Events</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="fs-sm text-center pb-4 mt-n1 mb-0"><span >© Omtech 2021. All Rights Reserved </span></p>
+    </footer>
+    <!-- Back to top button--><a class="btn-scroll-top" href="#top" data-scroll data-fixed-element><span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span><i class="btn-scroll-top-icon ai-arrow-up">   </i></a>
+    <!-- Vendor scrits: js libraries and plugins-->
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="assets/vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+    <script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/shufflejs/dist/shuffle.min.js"></script>
+    <!-- Main theme script-->
+    <script src="assets/js/theme.min.js"></script>
+  </body>
+</html>
